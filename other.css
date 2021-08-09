@@ -1,0 +1,120 @@
+/*universal styles*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 90%;
+    margin: 2em auto;
+
+} 
+
+h1, h2, h3 {
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+@media screen and (max-width: 48em) {
+    p {
+        font-size: .75rem;
+    }
+}
+
+/*header styles */
+header {
+    border-bottom: 1px dotted black;
+}
+
+/* list styles */
+
+a {
+    color: black;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    line-height: 1.5em;
+    display: inline;
+    padding: 2em;
+    
+        
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#home {
+    font-weight:bold;
+}
+
+a:visited {
+    color:darkcyan;
+}
+
+@media screen and (max-width: 40em) {
+    li {
+            font-size: .5em;
+        }
+    }
+
+    .blog-image, .other-image, .chico-image, .travel-image {
+        float: left;
+        padding-right: 1em;
+        padding-bottom: 1em;
+    }
+    
+    @media screen and (max-width: 70em) {
+        .blog-image, .other-image, .chico-image, .travel-image{
+            float: none;
+            width: 20em;
+        }
+    }
+
+    .top-link {
+        font-family: "Montserrat", sans-serif;
+        font-size:1rem;
+        font-weight: bold;
+    }
+
+
+ /* articles styles */
+
+.other-image, .chico-image, .travel-image {
+    width: 50%;
+}
+
+ #procrast, #miso, #anxious, #pigeons, #plates, #chicocats, #chicooppo, #esperance, #homeward {
+    line-height: 1.5em;
+    width: 90%;
+    border:1px dotted black;
+    padding: 2em;
+    margin: 1.5em;
+}   
+
+.definition {
+    font-style: italic;
+}
+
+/*footer styles */
+
+footer {
+    border-top: 1px dotted black;
+    
+}
+
+.footer, .subscribe {
+    text-align: center;
+}

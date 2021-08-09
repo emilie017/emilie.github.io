@@ -1,0 +1,195 @@
+/*universal styles*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 90%;
+    margin: 2em auto;
+
+} 
+
+h1, h2, h3 {
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+@media screen and (max-width: 48em) {
+    p {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width:70em) {
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0,1fr));
+        grid-gap: 20px;
+    }
+
+    header {
+        grid-column: 1 / 13;
+        grid-row: 1;
+    
+    }
+
+    nav{
+        grid-column:1 / 4;
+        grid-row:2
+    }
+
+    #snails, #chico-origin, #perth-esperance {
+        grid-column: 4 / 13;
+        grid-row: 2;
+    }
+
+    #procrast, #chicocats, #esperance {
+        grid-column:4 / 13;
+        grid-row: 3;
+    }
+
+    footer {
+        grid-column: 1 / 13;
+        grid-row: 4;
+    }
+}
+
+
+/*header styles */
+header {
+    border-bottom: 1px dotted black;
+}
+
+/* list styles */
+
+a {
+    color: black;
+}
+
+li {
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    line-height: 1.5em;
+        
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#home {
+    font-weight:bold;
+}
+
+a:visited {
+    color:darkcyan;
+}
+
+@media screen and (max-width: 40em) {
+li {
+        font-size: .5em;
+    }
+}
+
+/* article styles*/
+
+#snails, #chico-origin, #perth-esperance {
+    line-height: 1.5em;
+    width: 90%;
+    border:1px dotted black;
+    padding: 2em;
+    margin: 1.5em;
+}
+
+.blog-image, .chico-image, .travel-image {
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 70em) {
+    .blog-image, .chico-image, .travel-image {
+        float: none;
+        width: 20em;
+    }
+}
+
+.top-link {
+    font-family: "Montserrat", sans-serif;
+    font-size:1rem;
+    font-weight: bold;
+}
+
+#procrast, #chicocats, #esperance {
+    
+    line-height: 1.5em;
+    width: 90%;
+    border:1px dotted black;
+    padding: 2em;
+    margin: 1.5em;
+}
+
+.more {
+    font-family: "Montserrat", sans-serif;
+    font-size:1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.other-image, .chico-image, .travel-image {
+    width: 50%;
+}
+
+/* more stories */
+
+.more-stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding-bottom:1em;
+    
+    
+
+}
+
+
+.more1, .more2, .more3, .more4 {
+    border: 1px dotted black;
+    padding: 1em;
+    max-width: 25em;
+    justify-items:space-around;
+    
+
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 20em;
+    height: 20em;
+}
+
+.definition {
+    font-style: italic;
+}
+
+/*footer styles */
+
+footer {
+    border-top: 1px dotted black;
+    
+}
+
+.footer, .subscribe {
+    text-align: center;
+}
